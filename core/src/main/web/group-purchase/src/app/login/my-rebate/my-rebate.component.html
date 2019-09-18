@@ -1,0 +1,38 @@
+<div class="templateBox mt-1 text-left" style="position:absolute;z-index: 4" id="templateBox">
+  <div class="row ">
+    <div class="col-sm-2" >
+      <i class="fa fa-diamond"  style=" color: red;font-size: 20px"  aria-hidden="true"></i>
+    </div>
+    <div class="col-sm-8">
+      <p >我的会员</p>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="col-sm-8">
+      <p class=" font12 mt-2">账号余额：{{userInfo.vacancy}}</p>
+    </div>
+
+  </div>
+  <div class="row ">
+    <div class="col-sm-12">
+      <p class=" font12 mt-2">会员等级：{{userInfo.level}}</p>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="col-sm-5">
+      <p class=" font12 mt-2">充值金额:</p>
+    </div>
+    <div class="col-sm-6">
+      <input class="form-control" [(ngModel)]="addPrice" style="height: 30px">
+    </div>
+  </div>
+  <div class="row ">
+    <div class="col-sm-12">
+      <button class="btn btn-primary btn-sm form-control" on-click="addMoney()" >充值</button>
+    </div>
+  </div>
+</div>
+<!--<div style="z-index: 4">-->
+  <!--<app-search-loading *ngIf="isSearchLoading"></app-search-loading>-->
+<!--</div>-->
+

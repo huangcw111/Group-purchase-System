@@ -1,0 +1,88 @@
+<div class="row" >
+  <div class="col-sm-2 leftBox"  id="leftBox">
+    <div class="row">
+      <div class="col-sm-12">
+        <img src="../../../assets/logo2.1.png" class="logoCss">
+      </div>
+    </div>
+    <div class="row mt-4 leftHover" [ngClass]="{'leftPick':navPick=='0'}" (click)="leftPickFun('0')">
+      <div class="col-sm-12 ml-3 mt-2">
+        <p class="leftPStyle"><i class="fa fa-home leftIStyle" aria-hidden="true"></i>首页</p>
+      </div>
+    </div>
+    <div class="row  leftHover" [ngClass]="{'leftPick':navPick=='1'}" (click)="leftPickFun('1')">
+      <div class="col-sm-12 ml-3 mt-2">
+        <p class="leftPStyle"><i class="fa fa-user leftIStyle" aria-hidden="true"></i>商家管理</p>
+      </div>
+    </div>
+    <div class="row mt-2 leftHover" [ngClass]="{'leftPick':navPick=='2'}" (click)="leftPickFun('2')">
+      <div class="col-sm-12 ml-3 mt-2">
+        <p class="leftPStyle"><i class="fa fa-shopping-bag leftIStyle" aria-hidden="true"></i>商品分类</p>
+      </div>
+    </div>
+    <div class="row mt-2 leftHover" [ngClass]="{'leftPick':navPick=='3'}" (click)="leftPickFun('3')">
+      <div class="col-sm-12 ml-3 mt-2" >
+        <p class="leftPStyle"><i class="fa fa-user leftIStyle" aria-hidden="true"></i>会员管理</p>
+      </div>
+    </div>
+    <div class="row mt-2 leftHover" [ngClass]="{'leftPick':navPick=='4'}" (click)="leftPickFun('4')">
+      <div class="col-sm-12 ml-3 mt-2">
+        <p class="leftPStyle"><i class="fa fa-book leftIStyle" aria-hidden="true"></i>文章管理</p>
+      </div>
+    </div>
+    <div class="row mt-2 leftHover" [ngClass]="{'leftPick':navPick=='5'}" (click)="leftPickFun('5')">
+      <div class="col-sm-12 ml-3 mt-2">
+        <p class="leftPStyle"><i class="fa fa-picture-o leftIStyle" aria-hidden="true"></i>图片库管理</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-10 rightBox" id="rightBox">
+    <div class="row rightTopBox">
+      <div class="col-sm-6 mt-3">
+        <p class="rightTopP"><i class="fa fa-bars leftIStyle" aria-hidden="true" ></i>美购网后台管理系统</p>
+      </div>
+      <div class="col-sm-3 mt-4 text-right">
+        <p class="rightTopP1">你好</p>
+      </div>
+      <div class="col-sm-1 mt-4">
+        <p class="rightTopP1">{{username}}</p>
+      </div>
+      <div class="col-sm-1 mt-4">
+        <p class="rightTopP1"><i class="fa fa-bell " aria-hidden="true"></i>通知</p>
+      </div>
+      <div class="col-sm-1 mt-4 ">
+        <p class="rightTopP1" style="cursor: pointer" (click)="loginOut()">退出登录</p>
+      </div>
+    </div>
+    <div *ngIf="navPick=='0'" class="row mt-4 ml-2">
+      <div class="col-sm-12">
+        <h4>欢迎进入后台管理系统</h4>
+      </div>
+    </div>
+    <div class="row mt-4 ml-2" *ngIf="navPick=='1'">
+      <div class="col-sm-12">
+        <app-seller-list (changHeight)="scrollHeightChange()"></app-seller-list>
+      </div>
+    </div>
+    <div class="row mt-4  ml-4" *ngIf="navPick=='2'">
+      <div class="col-sm-12">
+        <app-admin-commodity-type (changHeight)="scrollHeightChange()"></app-admin-commodity-type>
+      </div>
+    </div>
+    <div class="row mt-4 " *ngIf="navPick=='3'">
+      <div class="col-sm-12">
+        <app-user-list (changHeight)="scrollHeightChange()"></app-user-list>
+      </div>
+    </div>
+    <div class="row mt-4 " *ngIf="navPick=='4'">
+      <div class="col-sm-12">
+        <app-admin-article (changHeight)="scrollHeightChange()"></app-admin-article>
+      </div>
+    </div>
+    <div class="row mt-4 " *ngIf="navPick=='5'">
+      <div class="col-sm-12">
+        <app-admin-pic (changHeight)="scrollHeightChange()"></app-admin-pic>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,182 @@
+.topBox{
+  height: 30px;
+  background-color: #ffe7f8;
+  box-shadow: 0px 0px 5px #888888;
+
+}
+.PUser{
+  font-size: 15px;
+  font-family:YouYuan;
+  cursor: pointer;
+}
+.PUser:hover{
+  color: #cb00cb;
+}
+.aStyle{
+  font-size: 15px;
+  font-family:YouYuan;
+  cursor: pointer;
+}
+.pStyle{
+  font-size: 12px;
+  font-family:YouYuan;
+}
+.logocss{
+  height: 120px;
+}
+.marTop50{
+  margin-top: 50px;
+}
+.searchCss{
+  width:40px;
+  background-color: #cb00cb;
+  border-radius: 2px;
+  text-align: center;
+}
+.searchI{
+  font-size: 20px;
+  color: white;
+  margin-top:9px;
+}
+.searchBtn{
+  width:90px;
+  background-color:#cb00cb ;
+  color: white;
+  font-family:YouYuan;
+  font-size: 15px;
+  letter-spacing:5px;
+}
+/*.classificationHeight{*/
+  /*height: 460px;*/
+
+/*}*/
+.classificationLeft{
+  background-color: #fffefd;
+  box-shadow: 0px 0px 10px #888888;
+}
+.classificationLeftAstyle{
+  color: #000000;
+  font-family:SimHei ;
+  font-size: 15px;
+  cursor:pointer;
+
+}
+.classificationRight{
+  background-color: #fffefd;
+  box-shadow: 0px 0px 10px #888888;
+
+}
+.adverBoxCss{
+
+  border-bottom: 1px solid #cb00cb;
+  height: 40px;
+}
+.AdverPStyle{
+  font-family:SimHei;margin-top: 5px
+}
+.AdverRightPStyle{
+  font-family:SimHei;margin-top: 5px;
+  font-size:13px;
+}
+.adverRightPickCSS{
+  border-bottom: 2px solid #cb00cb ;
+}
+.boxStyle{
+  background-color: #fffefd;
+  box-shadow: 0px 0px 10px #888888;
+}
+.boxIStyle{
+  color:#cb00cb;
+  margin-left: 5px;
+  font-size: 20px;
+  margin-top:3px;
+  cursor: pointer;
+}
+.commodityTopPStyle{
+  font-family:SimHei;
+  margin-top: 8px;
+  font-size:16px;
+  color:white;
+}
+.searchResultPStyle{
+  cursor: pointer;
+  font-size: 15px;
+  font-family: SimHei;
+}
+.searchResultPStyle:hover{
+  color: #cb00cb
+}
+.indexBox{
+  border-top: 1px solid silver;
+  padding: 10px;
+}
+.indexP{
+  font-family: SimHei;
+  font-size: 15px;
+  cursor: pointer;
+}
+.indexP:hover{
+  color:#cb00cb
+}
+.recommendBox{
+  border:1px solid silver;
+  height: 600px;
+}
+.font12{
+  font-size: 14px;
+}
+.font10{
+  font-size: 10px;
+}
+.fontColorGrey{
+  color:grey
+}
+.font20{
+  font-size: 20px;
+}
+.simhei{
+  font-family: SimHei;
+}
+.imgCss{
+  height: 80px;
+}
+.spanCss{
+
+  border-radius: 3px;
+  height: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color:white;
+
+}
+.colorRed{
+  background-color: #ff5351;
+}
+.colorGreen{
+  background-color: #4cacf9;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+  font-family: YouYuan;
+  opacity: 0.7;
+  letter-spacing: 2px;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  font-family: YouYuan;
+  opacity: 0.7;
+  letter-spacing: 2px;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-family: YouYuan;
+  opacity: 0.7;
+  letter-spacing: 2px;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  font-family: YouYuan;
+  opacity: 0.7;
+  letter-spacing: 2px;
+}
+
+
